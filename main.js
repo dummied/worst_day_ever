@@ -113,7 +113,7 @@ $(document).ready(function(){
   //   return names.join(", ")
   // }
 
-  data = $.ajax({url: 'http://swapi.co/api/films/', data_type: 'json', async: false})
+  data = $.ajax({url: 'https://swapi.co/api/films/', data_type: 'json', async: false})
           .done(function(response){
             sort_by_episode_number(response.results).forEach(function(movie){
               console.log(movie.release_date)
